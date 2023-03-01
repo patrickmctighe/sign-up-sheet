@@ -1,0 +1,201 @@
+
+ body{
+    background-color: goldenrod;
+ }
+.both{
+    display:flex;
+    
+}
+.left{
+    background-color: goldenrod;
+    width: 45%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.logo{
+   height:35px;
+   width: 35px;
+   position: relative;
+   
+}
+.crest{
+    position: absolute;
+    left: 185px;
+    top: 200px;
+    border-radius: 40px;
+}
+.sun1{
+    position: relative;
+height: 250px;
+width: 250px;
+}
+.sun2{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    left:345px;
+}
+.sun3{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    top:700px;
+    left:100px;
+}
+.sun4{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    top: 450px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+ 
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+.topText{
+    background-color: goldenrod;
+    text-align: center;
+    height: 100%;
+}
+.footer{
+    background-color: goldenrod;
+    height: 80%;
+    width: 100%;
+}
+.myForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    flex-wrap: wrap;
+    gap:20px;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    font-family: 'Satisfy', cursive;
+    
+}
+.mkred{
+    color:red;
+}
+.moreText{
+    line-height: 45px;
+    font-family: 'Satisfy', cursive;
+    font-size:23px;
+    font-weight: 100;
+    margin-left: 30px;
+    margin-right: 15px;
+    
+}
+.login{
+    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginBtn{
+    background-color: transparent;
+    color:aquamarine;
+    border: none;
+    font-size: 18px;
+
+}
+.submit{
+   
+      position: relative;
+      left: 12px;
+        font-size: 2rem;
+        background: hsl(190deg, 30%, 15%);
+        color: hsl(14, 83%, 45%);
+        
+        box-shadow: 0 0px 0px hsla(19, 90%, 48%, 0.911);
+        transfrom: translateY(0);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        
+        --dur: .15s;
+        --delay: .15s;
+        --radius: 16px;
+        
+        transition:
+          border-top-left-radius var(--dur) var(--delay) ease-out,
+          border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+          border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+          border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+          box-shadow calc(var(--dur) * 4) ease-out,
+          transform calc(var(--dur) * 4) ease-out,
+          background calc(var(--dur) * 4) steps(4, jump-end);
+      }
+      
+      .submit:hover,
+      .submit:focus {
+        box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
+        transform: translateY(-4px);
+        background: hsl(36, 95%, 46%);
+        border-top-left-radius: var(--radius);
+        border-top-right-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
+      }
+.footer{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+input{
+    background-color: gray;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+   border-radius: 45px;
+   text-align: center;
+}
+.anim_fire
+{
+animation: fire 2.0s infinite alternate;
+}
+@keyframes fire
+{
+   0%
+   {
+       text-shadow:
+       5px -25px 50px yellow,
+       0 0px 20px red,
+       10px -15px 15px orange;
+   }
+   33%
+   {
+       text-shadow:
+       0 -20px 30px yellow,
+       15px -5px 20px red,
+       5px 0 20px orange;
+   }
+   66%
+   {
+       text-shadow:
+       10px -25px 50px yellow,
+       5px -10px 20px red,
+       0 -5px 20px orange;
+   }
+   100%
+   {
+       text-shadow:
+       0 -20px 50px yellow,
+       5px -15px 20px red,
+       10px 0 20px orange;
+   }
+}

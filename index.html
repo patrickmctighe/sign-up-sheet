@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="left"></div>
+  </head>
+  <body>
+    <div class="both">
+      <div class="left">
+        <input class="crest" type="image" src="goldcrest.png" />
+        <input type="image" class="sun1" src="sungold2.png">
+        <input type="image" class="sun2" src="sungold2.png">
+        <input type="image" class="sun3" src="sungold2.png">
+        <input type="image" class="sun4" src="sungold2.png">
+      </div>
 
-    <div class="right">
-        <p class="mkred">Disclaimer: this is not a real online service dont enter any real information</p>
-<h2 class="text">Join The</h2>
-<h1 class="warrior">Warriors of Sunlight</h1>
-<h3 class="moreText">"We are amidst strange beings, in a strange land.
-    The flow of time itself is convoluted; with heroes centuries old phasing in and out.
-    The very fabric wavers, and relations shift and obscure.
-    There's no telling how much longer your world and mine will remain in contact.
-    But, use this, to summon one another as spirits, cross the gaps between the worlds, and engage in jolly co-operation!"
-    —Solaire of Astora</h3>
-<form action="get">
-    <label for="first">First Name</label>
-    <input type="text" id="first">
-    <label for="last">Last Name</label>
-    <input type="text" id="last">
-    <label for="email">Email</label>
-    <input type="email" id="email">
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone">
-    <label for="password" >Password</label>
-    <input type="password" id="password">
-    <label for="password2">Confirm Password</label>
-    <input type="password" id="password2">
+      <div class="right">
+        <div class="topText">
+          <p class="mkred">
+            Disclaimer: this is not a real online service dont enter any real
+            information
+          </p>
+          <h2 class="text">Join The</h2>
+          <h1 class="warrior">
+            <span class="anim_fire">Warriors of Sunlight</span>
+          </h1>
+          <h3 class="moreText">
+            "We are amidst strange beings, in a strange land. The flow of time
+            itself is convoluted; with heroes centuries old phasing in and out.
+            The very fabric wavers, and relations shift and obscure. There's no
+            telling how much longer your world and mine will remain in contact.
+            But, use this, to summon one another as spirits, cross the gaps
+            between the worlds, and engage in jolly co-operation!" —Solaire of
+            Astora
+          </h3>
+        </div>
 
+        <form class="myForm" action="get">
+          <label for="first">First Name <input type="text" id="first" /></label>
 
-</form>
+          <label for="last">Last Name <input type="text" id="last" /></label>
+
+          <label for="email">Email <input type="email" id="email" /></label>
+
+          <label for="phone"
+            >Phone Number <input type="tel" id="phone"
+          /></label>
+
+          <label for="password"
+            >Password <input type="password" id="password"
+          /></label>
+
+          <label for="password2"
+            >Confirm Password <input type="password" id="password2"
+          /></label>
+        </form>
+        <div class="footer">
+          <button class="submit">Praise the Sun!</button>
+          <p class="login">
+            Already a Warrior of the sun? ->
+            <button class="loginBtn">
+              <input class="logo" type="image" src="sungold2.png" />
+            </button>
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
